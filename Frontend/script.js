@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api/products';
+const API_URL = 'http://localhost:3000/products';
 
 document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch(API_URL);
