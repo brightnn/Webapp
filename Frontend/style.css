@@ -86,3 +86,33 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+#add-product-form input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#add-product-form button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+}
+
+#add-product-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Button Styling */
+button {
+    margin-top: 10px;
+    margin-left: 5px;
+}
