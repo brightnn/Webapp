@@ -1,9 +1,9 @@
-const API_URL = 'http://localhost:3000/products';
+const API_URL = 'http://34.225.208.251:3000/products';
 
 document.addEventListener('DOMContentLoaded', loadProducts);
 
 function loadProducts() {
-    fetch('http://localhost:3000/products')
+    fetch('http://34.225.208.251:3000/products')
         .then(response => response.json())
         .then(data => {
             if (!Array.isArray(data) || data.length === 0) {
@@ -69,7 +69,7 @@ function editProduct(productId) {
     if (productName && productPrice) {
         const updatedProduct = { name: productName, price: parseFloat(productPrice) };
 
-        fetch(`http://localhost:3000/products/${productId}`, {
+        fetch(`http://34.225.208.251:3000/products/${productId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -91,7 +91,7 @@ function deleteProduct(productId) {
     const confirmDelete = confirm('Are you sure you want to delete this product?');
 
     if (confirmDelete) {
-        fetch(`http://localhost:3000/products/${productId}`, {
+        fetch(`http://34.225.208.251:3000/products/${productId}`, {
             method: 'DELETE',
         })
             .then(response => response.json())
